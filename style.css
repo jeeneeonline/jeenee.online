@@ -3,7 +3,7 @@ body {
 }
 
 button {
-    background-color: #ff8635;
+    background-color: #f79400;
     color: #ffffff;
     font-weight: 900;
     border-radius: 20px;
@@ -11,7 +11,7 @@ button {
 }
 
 button:hover {
-    background-color: #f76300e5;
+    background-color: #ff781ee5;
     outline: none;
 }
 
@@ -94,15 +94,15 @@ button:hover {
 }
 
 .carousel-wrapper {
-    width: 95vw;
-    border-radius: 20px;
+    width: 100vw;
+    border-radius: 15px;
     overflow: hidden;
     /* This is crucial */
 }
 
 .carousel {
     width: 100vw;
-    height: 20vh;
+    height: 20vw;
     position: relative;
 }
 
@@ -153,5 +153,11 @@ button:hover {
 
     100% {
         transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .hd {
+        background-color: #9d9e9e00;
     }
 }
