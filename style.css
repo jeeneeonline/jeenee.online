@@ -3,17 +3,35 @@ body {
 }
 
 button {
-    background-color: #f79400;
+    background: linear-gradient(30deg, #ff5900 50%, #f7b100 100%);
     color: #ffffff;
     font-weight: 900;
-    border-radius: 20px;
+    border-radius: 15px;
+    font-size: 17px;
 
 }
 
 button:hover {
-    background-color: #ff781ee5;
-    outline: none;
+    background: linear-gradient(160deg, #f79800 10%, #f01515 50%);
+    color: #ffffffcd;
+    transition: 0.5s;
 }
+
+.buthero {
+    font-size: 22px;
+    border-radius: 20px;
+}
+
+#buthero1 {
+    background: linear-gradient(40deg, #0191ff 50%, #00caf7 100%);
+}
+
+#buthero1:hover {
+    background: linear-gradient(40deg, #00caf7 10%, #0077d2 50%);
+    transition: 0.5s;
+}
+
+
 
 #dclass {
     background-color: #b8b6b3a9;
@@ -25,11 +43,10 @@ button:hover {
 }
 
 .hd {
-    background-color: #9d9e9e8c;
+    background-color: #838383cd;
     border-radius: 50px;
     padding: 2px;
     margin-top: 10px;
-
 }
 
 #nav {
@@ -47,6 +64,77 @@ button:hover {
 
 .bgblack {
     background-color: rgb(0, 0, 0);
+}
+
+#stkdiv1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    top: 93%;
+}
+
+#stkdiv {
+    width: 35vw;
+    height: 50px;
+    background-color: #ffffffb7;
+    border-radius: 20px;
+    box-shadow: 0px 10px 20px .5px rgba(84, 84, 84, 0.448);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.doc_ele {
+    margin-left: 1.2vw;
+    margin-right: 1.2vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #000000;
+}
+
+.doc_ele:hover {
+    background-image: linear-gradient(45deg, #ff9901, #fb0303);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -text-fill-color: transparent;
+    transition: .5s;
+    font-size: 35px;
+}
+
+#heartico {
+    font-size: 35px;
+    background-image: linear-gradient(45deg, #ff9901, #fb0303);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    -text-fill-color: transparent;
+}
+
+#heartico:hover {
+    transition: .5s;
+    font-size: 50px;
+}
+
+#bgvid video {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    opacity: .2;
 }
 
 #herotext {
@@ -68,13 +156,6 @@ button:hover {
     margin-top: 40px;
 }
 
-#vid {
-    width: 80vw;
-    height: 30vh;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
 #viddiv {
     display: flex;
     justify-content: center;
@@ -83,7 +164,12 @@ button:hover {
 
 }
 
-
+#vid {
+    width: 80vw;
+    height: 30vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
 
 
 /* image carousel */
@@ -91,12 +177,14 @@ button:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
 }
 
 .carousel-wrapper {
     width: 100vw;
     border-radius: 15px;
     overflow: hidden;
+
     /* This is crucial */
 }
 
@@ -104,6 +192,7 @@ button:hover {
     width: 100vw;
     height: 20vw;
     position: relative;
+
 }
 
 .carousel-track {
@@ -116,7 +205,10 @@ button:hover {
     height: 100%;
     object-fit: cover;
     flex-shrink: 0;
+
 }
+
+
 
 @keyframes slide {
     0% {
@@ -159,5 +251,24 @@ button:hover {
 @media screen and (max-width: 600px) {
     .hd {
         background-color: #9d9e9e00;
+        display: flex;
+    }
+
+    #nav {
+        background-color: #646464a9;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 25px;
+        border-radius: 15px;
+    }
+
+    .carousel-wrapper {
+        border-radius: 10px;
+    }
+
+    #stkdiv {
+        width: 55vw;
+        height: 50px;
+        border-radius: 30px;
     }
 }
