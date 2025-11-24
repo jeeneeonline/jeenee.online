@@ -105,6 +105,15 @@ function play() {
                 img.src = 'images/Bird.png';
             }
         });
+        document.addEventListener('touchstart', () => {
+            img.src = 'images/Bird-2.png';
+            bird_dy = -7.6;
+        });
+
+        document.addEventListener('touchend', () => {
+            img.src = 'images/Bird.png';
+        });
+
 
         if (bird_props.top <= 0 || bird_props.bottom >= background.bottom) {
             game_state = 'End';
