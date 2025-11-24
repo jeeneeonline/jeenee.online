@@ -105,13 +105,13 @@ function play() {
                 img.src = 'images/Bird.png';
             }
         });
-        document.addEventListener('touchstart', () => {
+        document.addEventListener('click', () => {
             img.src = 'images/Bird-2.png';
-            bird_dy = -7.6;
-        });
+            bird_dy = -7.6;  // jump up
 
-        document.addEventListener('touchend', () => {
-            img.src = 'images/Bird.png';
+            setTimeout(() => {
+                img.src = 'images/Bird.png';
+            }, 150);
         });
 
 
