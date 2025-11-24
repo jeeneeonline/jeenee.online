@@ -33,6 +33,28 @@ document.addEventListener('keydown', (e) => {
         message.classList.remove('messageStyle');
         play();
     }
+
+});
+document.addEventListener('click', () => {
+    if (game_state !== 'Play') {
+
+        // Remove all pipes from previous game
+        document.querySelectorAll('.pipe_sprite').forEach(pipe => pipe.remove());
+
+        // Reset UI
+        img.style.display = 'block';
+        bird.style.top = '40vh';
+
+        // Reset state
+        game_state = 'Play';
+        message.textContent = '';
+        score_title.textContent = 'JeeneeNext Points : ';
+        score_val.textContent = '0';
+        message.classList.remove('messageStyle');
+
+        // Start game
+        play();
+    }
 });
 
 function play() {
